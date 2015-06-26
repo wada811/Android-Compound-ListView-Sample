@@ -44,7 +44,9 @@ ListView in ScrollView は１つのアイテムしか表示されないので
 
 MergeAdapter は何の View でも追加できます。
 
-ListView も Adapter を追加する形になるので再生成が効いてパフォーマンスが良いのかもしれません。
+ListView も Adapter を追加する形になるので
+
+再生成が効いてパフォーマンスが良いのかもしれません。
 
 
 ## Licence
