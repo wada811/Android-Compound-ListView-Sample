@@ -48,6 +48,7 @@ ListView も Adapter を追加する形になるので
 
 再生成が効いてパフォーマンスが良いのかもしれません。
 
+[Android - MergeAdapterが便利 - Qiita](http://qiita.com/yyaammaa/items/d31dc8f67da87ca36574)
 
 ## Licence
 
