@@ -5,26 +5,26 @@ In here, Compound-ListView is defined as ListView that has the view of multiple 
 
 ## Example
 ```
-┌────────┐
-│┌──────┐│
+┌──────────────┐
+│┌────────────┐│
 ││  TextView  ││
-│└──────┘│
-│┌──────┐│
+│└────────────┘│
+│┌────────────┐│
 ││  ListView  ││
-│└──────┘│
-│┌──────┐│
+│└────────────┘│
+│┌────────────┐│
 ││   Button   ││
-│└──────┘│
-│┌──────┐│
+│└────────────┘│
+│┌────────────┐│
 ││  TextView  ││
-│└──────┘│
-│┌──────┐│
+│└────────────┘│
+│┌────────────┐│
 ││  ListView  ││
-│└──────┘│
-│┌──────┐│
+│└────────────┘│
+│┌────────────┐│
 ││   Button   ││
-│└──────┘│
-└────────┘
+│└────────────┘│
+└──────────────┘
 ```
 
 ## Performance
@@ -42,10 +42,11 @@ ListView in ScrollView は１つのアイテムしか表示されないので
 
 [commonsguy/cwac-merge](https://github.com/commonsguy/cwac-merge)
 
+[Android - MergeAdapterが便利 - Qiita](http://qiita.com/yyaammaa/items/d31dc8f67da87ca36574)
+
 MergeAdapter は何の View でも追加できます。
 
-ListView も Adapter を追加する形になるので再生成が効いてパフォーマンスが良いのかもしれません。
-
+ListView も Adapter を追加するので通常の Adapter と同等のパフォーマンスが出るのかと思います。
 
 ## Licence
 
