@@ -6,9 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.FrameLayout.LayoutParams;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class ScrollViewActivity extends AppCompatActivity {
 
@@ -25,6 +28,18 @@ public class ScrollViewActivity extends AppCompatActivity {
         ListView listView2 = (ListView)findViewById(R.id.ListView2);
         setListViewHeightBasedOnChildren(listView1);
         setListViewHeightBasedOnChildren(listView2);
+        listView1.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
+                Toast.makeText(ScrollViewActivity.this, "listView1[" + position + "]", Toast.LENGTH_LONG).show();
+            }
+        });
+        listView2.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
+                Toast.makeText(ScrollViewActivity.this, "listView2[" + position+ "]", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     private void setListViewHeightBasedOnChildren(ListView listView){
